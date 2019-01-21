@@ -17,21 +17,16 @@ public class Book {
     private String description;
 
     public Book() {  }
-
-    public Book(String title, String author, String description) {
-        this.setTitle(title);
-        this.setAuthor(author);
-        this.setDescription(description);
-    }
     
-    
-	public Book(Long id, String title, String author, String description) {
-        this.setId(id);
+	public Book(String title, String author, String description) {
         this.setTitle(title);
         this.setAuthor(author);
         this.setDescription(description);
     }
 
+	public Long getId() {
+		return id;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -44,9 +39,7 @@ public class Book {
 		return description;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+
 
 	public void setTitle(String title) {
 		this.title = title;
