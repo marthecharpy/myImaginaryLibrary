@@ -28,7 +28,8 @@ public class Book {
 	public Book(Long id, String title, String author, String description) {
         this.setId(id);
         this.setTitle(title);
-        this.setAuthor(description);
+        this.setAuthor(author);
+        this.setDescription(description);
     }
 
 	public String getTitle() {
